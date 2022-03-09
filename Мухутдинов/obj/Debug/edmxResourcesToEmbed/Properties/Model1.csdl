@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="БД_МухутдиновModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Abiturenti">
+    <Key>
+      <PropertyRef Name="Kod_abiturenta" />
+    </Key>
+    <Property Name="Kod_abiturenta" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FIO" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Date_of_birth" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Telefon" Type="Int32" />
+    <Property Name="E_mail" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Adress_prowivanie" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="language" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Obchiwitie" Type="Boolean" />
+    <Property Name="Invalidnost" Type="Boolean" />
+    <Property Name="OVZ" Type="Boolean" />
+    <NavigationProperty Name="Lgotnie_documenti" Relationship="Self.FK_Lgotnie_documenti_Abiturenti" FromRole="Abiturenti" ToRole="Lgotnie_documenti" />
+    <NavigationProperty Name="Obrazovanie" Relationship="Self.FK_Obrazovanie_Abiturenti" FromRole="Abiturenti" ToRole="Obrazovanie" />
+    <NavigationProperty Name="Pasportnie_dannie" Relationship="Self.FK_Pasportnie_dannie_Abiturenti1" FromRole="Abiturenti" ToRole="Pasportnie_dannie" />
+    <NavigationProperty Name="Zaconie_predstaviteli" Relationship="Self.FK_Zaconie_predstaviteli_Abiturenti" FromRole="Abiturenti" ToRole="Zaconie_predstaviteli" />
+    <NavigationProperty Name="Zaivlenie" Relationship="Self.FK_Zaivlenie_Specilization" FromRole="Abiturenti" ToRole="Zaivlenie" />
+  </EntityType>
+  <EntityType Name="Lgotnie_documenti">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Seria" Type="Int64" Nullable="false" />
+    <Property Name="Nomer" Type="Int64" Nullable="false" />
+    <Property Name="Date_vidachi" Type="DateTime" Precision="7" />
+    <Property Name="Kem_vidan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="kod_abiturinta" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Abiturenti" Relationship="Self.FK_Lgotnie_documenti_Abiturenti" FromRole="Lgotnie_documenti" ToRole="Abiturenti" />
+  </EntityType>
+  <EntityType Name="Obrazovanie">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nazvanie_doc" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Seria" Type="Int64" Nullable="false" />
+    <Property Name="Nomer_doc" Type="Int64" Nullable="false" />
+    <Property Name="Srednie_ball" Type="Single" />
+    <Property Name="kod_abiturienta" Type="Int64" />
+    <NavigationProperty Name="Abiturenti" Relationship="Self.FK_Obrazovanie_Abiturenti" FromRole="Obrazovanie" ToRole="Abiturenti" />
+  </EntityType>
+  <EntityType Name="Pasportnie_dannie">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Seria_pasporta" Type="Int64" />
+    <Property Name="Date_vidachi" Type="DateTime" Precision="7" />
+    <Property Name="Kem_vidan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Grawdanstvo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Nationality" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="kod_abiturienta" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Abiturenti" Relationship="Self.FK_Pasportnie_dannie_Abiturenti1" FromRole="Pasportnie_dannie" ToRole="Abiturenti" />
+  </EntityType>
+  <EntityType Name="Sotrudniki">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FIO" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dolwnost" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Specilization">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nazvanie_spec" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Forma_obych" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Baza_obych" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Zaivlenie" Relationship="Self.FK_Zaivlenie_Specilization1" FromRole="Specilization" ToRole="Zaivlenie" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Zaconie_predstaviteli">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Kod_abiturenta" Type="Int64" Nullable="false" />
+    <Property Name="FIO" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Stepen_rodstva" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Telefon" Type="Int32" Nullable="false" />
+    <Property Name="Mesto_rabotu" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Adress_prowivanie" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Abiturenti" Relationship="Self.FK_Zaconie_predstaviteli_Abiturenti" FromRole="Zaconie_predstaviteli" ToRole="Abiturenti" />
+  </EntityType>
+  <EntityType Name="Zaivlenie">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date_zaivlenie" Type="DateTime" Precision="7" />
+    <Property Name="Kod_abiturenta" Type="Int64" Nullable="false" />
+    <Property Name="Kod_spec" Type="Int64" />
+    <NavigationProperty Name="Abiturenti" Relationship="Self.FK_Zaivlenie_Specilization" FromRole="Zaivlenie" ToRole="Abiturenti" />
+    <NavigationProperty Name="Specilization" Relationship="Self.FK_Zaivlenie_Specilization1" FromRole="Zaivlenie" ToRole="Specilization" />
+  </EntityType>
+  <Association Name="FK_Lgotnie_documenti_Abiturenti">
+    <End Role="Abiturenti" Type="Self.Abiturenti" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Lgotnie_documenti" Type="Self.Lgotnie_documenti" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Abiturenti">
+        <PropertyRef Name="Kod_abiturenta" />
+      </Principal>
+      <Dependent Role="Lgotnie_documenti">
+        <PropertyRef Name="kod_abiturinta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Obrazovanie_Abiturenti">
+    <End Role="Abiturenti" Type="Self.Abiturenti" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Obrazovanie" Type="Self.Obrazovanie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Abiturenti">
+        <PropertyRef Name="Kod_abiturenta" />
+      </Principal>
+      <Dependent Role="Obrazovanie">
+        <PropertyRef Name="kod_abiturienta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pasportnie_dannie_Abiturenti1">
+    <End Role="Abiturenti" Type="Self.Abiturenti" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Pasportnie_dannie" Type="Self.Pasportnie_dannie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Abiturenti">
+        <PropertyRef Name="Kod_abiturenta" />
+      </Principal>
+      <Dependent Role="Pasportnie_dannie">
+        <PropertyRef Name="kod_abiturienta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Zaconie_predstaviteli_Abiturenti">
+    <End Role="Abiturenti" Type="Self.Abiturenti" Multiplicity="1" />
+    <End Role="Zaconie_predstaviteli" Type="Self.Zaconie_predstaviteli" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Abiturenti">
+        <PropertyRef Name="Kod_abiturenta" />
+      </Principal>
+      <Dependent Role="Zaconie_predstaviteli">
+        <PropertyRef Name="Kod_abiturenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Zaivlenie_Specilization">
+    <End Role="Abiturenti" Type="Self.Abiturenti" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Zaivlenie" Type="Self.Zaivlenie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Abiturenti">
+        <PropertyRef Name="Kod_abiturenta" />
+      </Principal>
+      <Dependent Role="Zaivlenie">
+        <PropertyRef Name="Kod_abiturenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Zaivlenie_Specilization1">
+    <End Role="Specilization" Type="Self.Specilization" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Zaivlenie" Type="Self.Zaivlenie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Specilization">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Zaivlenie">
+        <PropertyRef Name="Kod_spec" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="БД_МухутдиновEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Abiturenti" EntityType="Self.Abiturenti" />
+    <EntitySet Name="Lgotnie_documenti" EntityType="Self.Lgotnie_documenti" />
+    <EntitySet Name="Obrazovanie" EntityType="Self.Obrazovanie" />
+    <EntitySet Name="Pasportnie_dannie" EntityType="Self.Pasportnie_dannie" />
+    <EntitySet Name="Sotrudniki" EntityType="Self.Sotrudniki" />
+    <EntitySet Name="Specilization" EntityType="Self.Specilization" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Zaconie_predstaviteli" EntityType="Self.Zaconie_predstaviteli" />
+    <EntitySet Name="Zaivlenie" EntityType="Self.Zaivlenie" />
+    <AssociationSet Name="FK_Lgotnie_documenti_Abiturenti" Association="Self.FK_Lgotnie_documenti_Abiturenti">
+      <End Role="Abiturenti" EntitySet="Abiturenti" />
+      <End Role="Lgotnie_documenti" EntitySet="Lgotnie_documenti" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Obrazovanie_Abiturenti" Association="Self.FK_Obrazovanie_Abiturenti">
+      <End Role="Abiturenti" EntitySet="Abiturenti" />
+      <End Role="Obrazovanie" EntitySet="Obrazovanie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pasportnie_dannie_Abiturenti1" Association="Self.FK_Pasportnie_dannie_Abiturenti1">
+      <End Role="Abiturenti" EntitySet="Abiturenti" />
+      <End Role="Pasportnie_dannie" EntitySet="Pasportnie_dannie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Zaconie_predstaviteli_Abiturenti" Association="Self.FK_Zaconie_predstaviteli_Abiturenti">
+      <End Role="Abiturenti" EntitySet="Abiturenti" />
+      <End Role="Zaconie_predstaviteli" EntitySet="Zaconie_predstaviteli" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Zaivlenie_Specilization" Association="Self.FK_Zaivlenie_Specilization">
+      <End Role="Abiturenti" EntitySet="Abiturenti" />
+      <End Role="Zaivlenie" EntitySet="Zaivlenie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Zaivlenie_Specilization1" Association="Self.FK_Zaivlenie_Specilization1">
+      <End Role="Specilization" EntitySet="Specilization" />
+      <End Role="Zaivlenie" EntitySet="Zaivlenie" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

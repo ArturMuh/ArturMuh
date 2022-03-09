@@ -1,0 +1,46 @@
+﻿<Page x:Class="Мухутдинов.NewFolder1.ZaivleniePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Мухутдинов.NewFolder1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Заявление" Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer>
+            <StackPanel Background="AntiqueWhite">
+                <DataGrid Name="ZaivlenieDataGrid" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="id" x:Name="ZaivlenieIDColumn" Visibility="Collapsed" Binding="{Binding id, Mode=TwoWay}"/>
+                        <DataGridTextColumn Header="Дата заявления" x:Name="ZaivlenieDatezaivlenieColumn" Width="2*" Binding="{Binding Date_zaivlenie, Mode=TwoWay}"/>
+                        <DataGridTextColumn Header="Код абитуриента" x:Name="ZaivlenieKodabiturentaColumn" Width="3*" Binding="{Binding Kod_abiturenta, Mode=TwoWay}"/>
+                        <DataGridTextColumn Header="Код специальности" x:Name="ZaivlenieKodspecColumn" Width="2*" Binding="{Binding Kod_spec, Mode=TwoWay}"/>
+                        <DataGridTemplateColumn x:Name="ZaivlenieDeleteColumn" Width="0.8*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Click ="Button_Click">Удалить</Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </ScrollViewer>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1">
+            <Button Margin="0,5" Name ="ZaivlenieTable" Click ="ZaivlenieTable_Click">
+                <TextBlock Margin="5" FontSize="20">Обновить</TextBlock>
+            </Button>
+
+        </StackPanel>
+
+    </Grid>
+</Page>

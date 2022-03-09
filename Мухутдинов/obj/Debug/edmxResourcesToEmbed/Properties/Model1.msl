@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище БД_МухутдиновModelContainer" CdmEntityContainer="БД_МухутдиновEntities">
+    <EntitySetMapping Name="Abiturenti">
+      <EntityTypeMapping TypeName="БД_МухутдиновModel.Abiturenti">
+        <MappingFragment StoreEntitySet="Abiturenti">
+          <ScalarProperty Name="Kod_abiturenta" ColumnName="Kod_abiturenta" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="Date_of_birth" ColumnName="Date_of_birth" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="E_mail" ColumnName="E_mail" />
+          <ScalarProperty Name="Adress_prowivanie" ColumnName="Adress_prowivanie" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="Obchiwitie" ColumnName="Obchiwitie" />
+          <ScalarProperty Name="Invalidnost" ColumnName="Invalidnost" />
+          <ScalarProperty Name="OVZ" ColumnName="OVZ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lgotnie_documenti">
+      <EntityTypeMapping TypeName="БД_МухутдиновModel.Lgotnie_documenti">
+        <MappingFragment StoreEntitySet="Lgotnie_documenti">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Seria" ColumnName="Seria" />
+          <ScalarProperty Name="Nomer" ColumnName="Nomer" />
+          <ScalarProperty Name="Date_vidachi" ColumnName="Date_vidachi" />
+          <ScalarProperty Name="Kem_vidan" ColumnName="Kem_vidan" />
+          <ScalarProperty Name="kod_abiturinta" ColumnName="kod_abiturinta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Obrazovanie">
+      <EntityTypeMapping TypeName="БД_МухутдиновModel.Obrazovanie">
+        <MappingFragment StoreEntitySet="Obrazovanie">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Nazvanie_doc" ColumnName="Nazvanie_doc" />
+          <ScalarProperty Name="Seria" ColumnName="Seria" />
+          <ScalarProperty Name="Nomer_doc" ColumnName="Nomer_doc" />
+          <ScalarProperty Name="Srednie_ball" ColumnName="Srednie_ball" />
+          <ScalarProperty Name="kod_abiturienta" ColumnName="kod_abiturienta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pasportnie_dannie">
+      <EntityTypeMapping TypeName="БД_МухутдиновModel.Pasportnie_dannie">
+        <MappingFragment StoreEntitySet="Pasportnie_dannie">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Seria_pasporta" ColumnName="Seria_pasporta" />
+          <ScalarProperty Name="Date_vidachi" ColumnName="Date_vidachi" />
+          <ScalarProperty Name="Kem_vidan" ColumnName="Kem_vidan" />
+          <ScalarProperty Name="Grawdanstvo" ColumnName="Grawdanstvo" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="kod_abiturienta" ColumnName="kod_abiturienta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sotrudniki">
+      <EntityTypeMapping TypeName="БД_МухутдиновModel.Sotrudniki">
+        <MappingFragment StoreEntitySet="Sotrudniki">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Dolwnost" ColumnName="Dolwnost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Specilization">
+      <EntityTypeMapping TypeName="БД_МухутдиновModel.Specilization">
+        <MappingFragment StoreEntitySet="Specilization">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Nazvanie_spec" ColumnName="Nazvanie_spec" />
+          <ScalarProperty Name="Forma_obych" ColumnName="Forma_obych" />
+          <ScalarProperty Name="Baza_obych" ColumnName="Baza_obych" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="БД_МухутдиновModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zaconie_predstaviteli">
+      <EntityTypeMapping TypeName="БД_МухутдиновModel.Zaconie_predstaviteli">
+        <MappingFragment StoreEntitySet="Zaconie_predstaviteli">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Kod_abiturenta" ColumnName="Kod_abiturenta" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="Stepen_rodstva" ColumnName="Stepen_rodstva" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Mesto_rabotu" ColumnName="Mesto_rabotu" />
+          <ScalarProperty Name="Adress_prowivanie" ColumnName="Adress_prowivanie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zaivlenie">
+      <EntityTypeMapping TypeName="БД_МухутдиновModel.Zaivlenie">
+        <MappingFragment StoreEntitySet="Zaivlenie">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Date_zaivlenie" ColumnName="Date_zaivlenie" />
+          <ScalarProperty Name="Kod_abiturenta" ColumnName="Kod_abiturenta" />
+          <ScalarProperty Name="Kod_spec" ColumnName="Kod_spec" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

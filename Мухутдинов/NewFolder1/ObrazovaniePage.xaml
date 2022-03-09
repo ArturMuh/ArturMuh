@@ -1,0 +1,47 @@
+﻿<Page x:Class="Мухутдинов.NewFolder1.ObrazovaniePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Мухутдинов.NewFolder1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Образование" Loaded="Page_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer>
+            <StackPanel Background="AntiqueWhite">
+                <DataGrid Name="ObrazovanieDataGrid" AutoGenerateColumns="False" CanUserAddRows="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="id"  x:Name="ObrazovanieIDColumn" Visibility="Collapsed" Binding="{Binding id, Mode=TwoWay}"/>
+                        <DataGridTextColumn Header="Название документа" x:Name="ObrazovanieNazvanieDocColumn" Width="2*" Binding="{Binding Nazvanie_doc, Mode=TwoWay}"/>
+                        <DataGridTextColumn Header="Серия" x:Name="ObrazovanieSeriaColumn" Width="1*" Binding="{Binding Seria, Mode=TwoWay}"/>
+                        <DataGridTextColumn Header="Номер документа" x:Name="ObrazovanieNomerDocColumn" Width="1*" Binding="{Binding Nomer_doc, Mode=TwoWay}"/>
+                        <DataGridTextColumn Header="Средний балл" x:Name="ObrazovanieSrBallColumn" Width="1*" Binding="{Binding Srednie_ball, Mode=TwoWay}"/>
+                        <DataGridTemplateColumn x:Name="ObrazovanieDeleteColumn" Width="0.8*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Click="Button_Click">Удалить</Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </ScrollViewer>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1">
+            <Button Margin="0,5" Name ="ObrazovanieTable" Click ="ObrazovanieTable_Click">
+                <TextBlock Margin="5" FontSize="20">Обновить</TextBlock>
+            </Button>
+            
+        </StackPanel>
+
+
+    </Grid>
+</Page>

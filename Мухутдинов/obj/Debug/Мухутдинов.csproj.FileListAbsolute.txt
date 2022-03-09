@@ -1,0 +1,59 @@
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\bin\Debug\Мухутдинов.exe.config
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\bin\Debug\Мухутдинов.exe
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\bin\Debug\Мухутдинов.pdb
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\obj\Debug\MainWindow.g.cs
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\obj\Debug\Window1.g.cs
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\obj\Debug\App.g.cs
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\obj\Debug\Мухутдинов_MarkupCompile.cache
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\obj\Debug\Мухутдинов_MarkupCompile.lref
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\obj\Debug\MainWindow.baml
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\obj\Debug\Window1.baml
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\obj\Debug\Мухутдинов.g.resources
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\obj\Debug\Мухутдинов.Properties.Resources.resources
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\obj\Debug\Мухутдинов.csproj.GenerateResource.cache
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\obj\Debug\Мухутдинов.csproj.CoreCompileInputs.cache
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\obj\Debug\Мухутдинов.exe
+C:\Users\Артур Мухутдинов\Desktop\УП01\Мухутдинов\obj\Debug\Мухутдинов.pdb
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\AbiturientiPage.g.cs
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\MainWindow.g.cs
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\HeaderPage.g.cs
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\Lgotnie documentiPage.g.cs
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\MainPage1.g.cs
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\ObrazovaniePage.g.cs
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\Pasportnie danniePage.g.cs
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\Zaconie predstaviteliPage.g.cs
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\ZaivleniePage.g.cs
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\SpecializationPage.g.cs
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Window1.g.cs
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\App.g.cs
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Мухутдинов_Content.g.cs
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Мухутдинов_MarkupCompile.cache
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Мухутдинов_MarkupCompile.lref
+D:\УП01_Мухутдинов\УП01\Мухутдинов\bin\Debug\Мухутдинов.exe.config
+D:\УП01_Мухутдинов\УП01\Мухутдинов\bin\Debug\Мухутдинов.exe
+D:\УП01_Мухутдинов\УП01\Мухутдинов\bin\Debug\Мухутдинов.pdb
+D:\УП01_Мухутдинов\УП01\Мухутдинов\bin\Debug\EntityFramework.dll
+D:\УП01_Мухутдинов\УП01\Мухутдинов\bin\Debug\EntityFramework.SqlServer.dll
+D:\УП01_Мухутдинов\УП01\Мухутдинов\bin\Debug\EntityFramework.xml
+D:\УП01_Мухутдинов\УП01\Мухутдинов\bin\Debug\EntityFramework.SqlServer.xml
+D:\УП01_Мухутдинов\УП01\Мухутдинов\bin\Debug\ru\EntityFramework.resources.dll
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\AbiturientiPage.baml
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\MainWindow.baml
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\HeaderPage.baml
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\Lgotnie documentiPage.baml
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\MainPage1.baml
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\ObrazovaniePage.baml
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\Pasportnie danniePage.baml
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\Zaconie predstaviteliPage.baml
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\NewFolder1\ZaivleniePage.baml
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\SpecializationPage.baml
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Window1.baml
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Мухутдинов.g.resources
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Мухутдинов.Properties.Resources.resources
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Мухутдинов.csproj.GenerateResource.cache
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Мухутдинов.csproj.CoreCompileInputs.cache
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Мухутдинов.csproj.CopyComplete
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Мухутдинов.exe
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Мухутдинов.pdb
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Мухутдинов.csproj.AssemblyReference.cache
+D:\УП01_Мухутдинов\УП01\Мухутдинов\obj\Debug\Мухутдинов.csproj.SuggestedBindingRedirects.cache

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c69a702252bc4322919738e326690a60" Name="Diagram1" ZoomLevel="52">
+        <EntityTypeShape EntityType="БД_МухутдиновModel.Abiturenti" Width="1.5" PointX="1.125" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="БД_МухутдиновModel.Lgotnie_documenti" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="БД_МухутдиновModel.Obrazovanie" Width="1.5" PointX="4.375" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="БД_МухутдиновModel.Pasportnie_dannie" Width="1.5" PointX="3.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="БД_МухутдиновModel.Sotrudniki" Width="1.5" PointX="4.625" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="БД_МухутдиновModel.Specilization" Width="1.5" PointX="2.375" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="БД_МухутдиновModel.sysdiagrams" Width="1.5" PointX="6.625" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="БД_МухутдиновModel.Zaconie_predstaviteli" Width="1.5" PointX="1.125" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="БД_МухутдиновModel.Zaivlenie" Width="1.5" PointX="6.5" PointY="4.375" IsExpanded="true" />
+        <AssociationConnector Association="БД_МухутдиновModel.FK_Lgotnie_documenti_Abiturenti" ManuallyRouted="false" />
+        <AssociationConnector Association="БД_МухутдиновModel.FK_Obrazovanie_Abiturenti" ManuallyRouted="false" />
+        <AssociationConnector Association="БД_МухутдиновModel.FK_Pasportnie_dannie_Abiturenti1" ManuallyRouted="false" />
+        <AssociationConnector Association="БД_МухутдиновModel.FK_Zaconie_predstaviteli_Abiturenti" ManuallyRouted="false" />
+        <AssociationConnector Association="БД_МухутдиновModel.FK_Zaivlenie_Specilization" ManuallyRouted="false" />
+        <AssociationConnector Association="БД_МухутдиновModel.FK_Zaivlenie_Specilization1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,49 @@
+﻿<Page x:Class="Мухутдинов.NewFolder1.Lgotnie_documentiPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Мухутдинов.NewFolder1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Lgotnie_documentiPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer>
+            <StackPanel Background="AntiqueWhite">
+                <DataGrid Name="LgotniedocumentiDataGrid" AutoGenerateColumns="False" CanUserAddRows="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="id"  x:Name="LgotniedocumentiIDColumn" Visibility="Collapsed" Binding="{Binding id, Mode=TwoWay}"/>
+                        <DataGridTextColumn Header="Серия" x:Name="LgotniedocumentiSeriaColumn" Width="2*" Binding="{Binding Seria, Mode=TwoWay}"/>
+                        <DataGridTextColumn Header="Номер" x:Name="LgotniedocumentiNomerColumn" Width="1*" Binding="{Binding Nomer, Mode=TwoWay}"/>
+                        <DataGridTextColumn Header="Дата выдачи" x:Name="LgotniedocumentiDatevidachiColumn" Width="1*" Binding="{Binding Date_vidachi, Mode=TwoWay}"/>
+                        <DataGridTextColumn Header="Кем выдан" x:Name="LgotniedocumentiKemvidanColumn" Width="1*" Binding="{Binding Kem_vidan, Mode=TwoWay}"/>
+                        <DataGridTextColumn Header="Код абитуриента" x:Name="LgotniedocumentiKodAbiturintaColumn" Width="1*" Binding="{Binding Kod_abiturinta, Mode=TwoWay}"/>
+                        <DataGridTemplateColumn x:Name="ObrazovanieDeleteColumn" Width="0.8*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Click ="Button_Click">Удалить</Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </ScrollViewer>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1">
+            <Button Margin="0,5" Name ="LgotniedocumentiTable" Click="Lgotniedocumenti_Click">
+                <TextBlock Margin="5" FontSize="20">Обновить</TextBlock>
+            </Button>
+
+        </StackPanel>
+
+
+    </Grid>
+</Page>
